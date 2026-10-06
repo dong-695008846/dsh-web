@@ -176,7 +176,7 @@ const ADAPT_CSS: readonly string[] = [
   // left/right edges vertically centered over both lines.
   '[class$="_composerSeat"] [class$="_card"]{margin-bottom:1px}',
   '[class$="_composerSeat"] [class$="_row"]{flex-wrap:wrap;row-gap:0;padding:2px 8px 1px;position:relative}',
-  '[class$="_composerSeat"] [class$="_add"]{position:absolute;left:8px;top:50%;transform:translateY(-50%)}',
+  '[class$="_composerSeat"] [class$="_add"]{position:absolute;left:8px;top:50%;transform:translateY(-50%);z-index:10}',
   '[class$="_composerSeat"] [class$="_modes"]{min-width:0;padding-left:38px}',
   // Model line left-aligned with the permission line (same command-button
   // clearance), rows stay tightly stacked.
@@ -189,7 +189,7 @@ const ADAPT_CSS: readonly string[] = [
   // viewport's right edge, which is the unreachable button the reporter
   // measured (#1818). border-box contains the padding inside the basis, so the
   // line stays within the card and the button lands back inside it.
-  '[class$="_composerSeat"] [class$="_trailing"]{box-sizing:border-box;flex-basis:100%;position:relative;min-height:32px;justify-content:flex-start;padding-left:38px;padding-right:78px}',
+  '[class$="_composerSeat"] [class$="_trailing"]{box-sizing:border-box;flex-basis:100%;min-height:32px;justify-content:flex-start;padding-left:38px;padding-right:78px}',
   '[class$="_composerSeat"] [class$="_trailing"] *{font-size:12px}',
   // v54: smaller permission/model buttons (font + height). v79: the
   // permission trigger collapses to its shield icon on phones — the label
